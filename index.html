@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" defer src="./main.js"></script>
+    <script type="module" defer src="./js/functions.js"></script>
+    <script defer src="./js/selectedpage.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="links">
+            <div id="titleContainer" style="background-color:rgb(158, 66, 245)">
+                <h1 id="title"><a id="index">Password Generator</a></h1>
+            </div>
+            <div id="break"></div>
+            <div id="recentContainer">
+                <h2><a id="recent">Recent Passwords</a></h2>
+            </div>
+        </div>
+        <div class="checkboxContainer">
+            <label for="length"><input id="length" name="length" type="range" min="12" max="50" value="12">Password length</label>
+            <label for="uppercase"><input id="uppercase" name="uppercase" type="checkbox" >Uppercase</label>
+            <label for="lowercase"><input id="lowercase" name="lowercase" type="checkbox" >Lowercase</label>
+            <label for="digits"><input id="digits" name="digits" type="checkbox" >Digits</label>
+            <label for="specialChars"><input id="specialChars" name="specialChars" type="checkbox" >Special Characters</label>
+            <label for="clipboardCheckbox"><input id="clipboardCheckbox" name="copytoclipboard" type="checkbox" >Copy to clipboard</label>
+            <label for="autoclose"><input id="autoclose" name="autoclose" type="checkbox">Autoclose after generation</label>
+        </div>
+        <button id="generatePassword">Generate password</button>
+        <p id="passwordOutput">Generate a password!</p>
+        <p id="copyConfirm" class="hidden">Copied!</p>
+    </div>
+</body>
+</html>

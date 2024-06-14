@@ -1,0 +1,155 @@
+/* Full Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(119, 22, 145);
+}
+
+.container {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    color: white;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 2px solid rgba(158, 66, 245, 0.7);
+}
+
+h1, h2, p {
+    margin: 20px;
+}
+
+h1, h2 {
+    user-select: none;
+    font-size: 2em;
+}
+
+input,
+button,
+a {
+    font-family: inherit;
+    color: inherit
+}
+a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.flex {
+    display: flex; 
+    align-items: center;
+    border-bottom: 2px solid #333;
+}
+
+ .icon {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    cursor: pointer
+ }
+
+ .tip {
+    text-align: center;
+    margin: 5px 0 0 0 
+ }
+
+/* Specific styles */
+
+#titleContainer:hover, #recentContainer:hover {
+    background-color: rgb(158, 66, 245);
+    cursor: pointer;
+}
+
+
+#break {
+    border-bottom: 2px solid rgba(158, 66, 245, 0.7);
+    height: 100%;
+}
+
+.checkboxContainer {
+    width: 200px;
+    padding: 20px 0px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.checkboxContainer label {
+    margin-bottom: 8px;
+}
+
+#length {
+    width: 75px;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+}
+input[type="checkbox"] {
+    background-color: #fff;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+}
+
+input[type="number"] {
+    width: 60px;
+    margin: 0 5px 0 0;
+    padding: 2px 4px;
+    border: 2px solid #ccc; 
+    border-radius: 5px;
+    color: #333;
+    background-color: #f7f7f7; 
+}
+
+#generatePassword {
+    display: inline-block;
+    width: auto;
+    padding: 5px 8px;
+    border-radius: 8px;
+    background-color: rgb(158, 66, 245);
+    color: white;
+    border: 2px solid rgba(119, 22, 145)
+}
+
+#generatePassword:hover, #generatePassword:focus-visible {
+    outline: none;
+    background-color: rgba(158, 66, 245, 0.4);
+}
+
+
+#passwordOutput {
+    overflow-wrap: break-word;
+    font-size: 1.4rem;
+ }
+
+ .hidden {
+    display: none;
+ }
+
+ 
+ #recentPasswordsContainer {
+    text-align: center;
+    overflow-wrap: break-word;
+    padding: 0px 20px;
+ }
+
+ .passwordWrapper {
+    max-width: 200px;
+ }
+
+
